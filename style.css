@@ -26,7 +26,7 @@ animation:fade 6s ease-in-out infinite
     }
     to{
     border: 10px solid transparent;
-    font-size: 1200px;
+    font-size: 1000px;
     color:transparent;
    }
 }
