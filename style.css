@@ -1,0 +1,32 @@
+*{
+    background-color: black;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.headline{
+border: 10px solid white;
+padding: 40px;
+border-radius: 20px;
+animation:fade 6s ease-in-out infinite
+}
+
+@keyframes fade{
+    from{
+        font-size: 100px;
+        color:white
+    }
+    to{
+    border: 10px solid transparent;
+    font-size: 1200px;
+    color:transparent;
+   }
+}
