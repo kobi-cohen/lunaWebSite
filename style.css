@@ -1,32 +1,51 @@
 *{
-    background-color: black;
+    
     box-sizing: border-box;
     overflow: hidden;
 }
-body{
+.wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
+    
+
+}
+.wrapperCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-
 }
-
 .headline{
-border: 10px solid white;
-padding: 40px;
-border-radius: 20px;
-animation:fade 6s ease-in-out infinite
+    font-size: 10rem;
+}
+.wheel{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    animation:spin 30s linear infinite;
+}
+.w1{
+    
+    animation:spin 30s reverse linear infinite;
+ 
+    background-image: url('./assets/2.png');
+}
+.w2{
+    left:-8px;
+    background-image: url('./assets/1.png');
 }
 
-@keyframes fade{
+
+@keyframes spin{
     from{
-        font-size: 100px;
-        color:white
+        transform: rotate(0deg);
     }
     to{
-    border: 10px solid transparent;
-    font-size: 800px;
-    color:transparent;
+        transform: rotate(360deg);
+   
    }
 }
+
